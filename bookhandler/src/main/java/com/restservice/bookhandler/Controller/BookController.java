@@ -26,7 +26,7 @@ public class BookController {
 	@PostMapping("/Addbook")
 	public ResponseEntity<String> addBook(@RequestBody Book book){
 		bookimplementation.addBook(book);
-		return new ResponseEntity<String>("Added Successfully",HttpStatus.ACCEPTED);
+		return new ResponseEntity<String>("Added Successfully",HttpStatus.CREATED);
 	}
 	
 
