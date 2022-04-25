@@ -14,7 +14,7 @@ public class BookImplementation {
 	@Autowired
 	BookRepository bookrepository;
   public List<Book> getAllBooks(){
-	  List<Book> bookList=bookrepository.findAll();
+	  List<Book> listOfBooks=bookrepository.findAll();
 	  return bookList;
   }
 	public void addBook(Book book) {
